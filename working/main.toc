@@ -1,0 +1,17 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\bfseries Abstract}{5}{chapter*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\bfseries \numberline {Chapter 1}Why Supersymmetry?}{7}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\bfseries \numberline {Chapter 2}The Description of N=1 Supersymmetry Gauge Theory}{9}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\bfseries \numberline {Chapter 3}Renormalization}{11}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\bfseries \numberline {Chapter 4}Anomalies}{13}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\bfseries \numberline {Chapter 5}Seiberg Witten Theory}{15}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\bfseries \numberline {Chapter 6}Appendix}{17}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\bfseries \numberline {6.1}Notation Convention}{17}{section.6.1}
