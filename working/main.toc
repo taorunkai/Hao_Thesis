@@ -12,6 +12,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\bfseries \numberline {Chapter 5}Seiberg Witten Theory}{15}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bfseries \numberline {Chapter 6}Appendix}{17}{chapter.6}
+\contentsline {chapter}{\bfseries \numberline {Appendix A}Notation Convention}{17}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\bfseries \numberline {6.1}Notation Convention}{17}{section.6.1}
+\contentsline {section}{\bfseries \numberline {A.1}4 dimension Gamma Matrice}{17}{section.A.1}

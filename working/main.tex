@@ -1,42 +1,56 @@
-\documentclass{fduthesis-en}
+\documentclass[type = bachelor]{fduthesis-en}
+\include{mathdef}
 \fdusetup{
 	style/bibresource={test.bib},
 	%style/automakecover=false,
 	info={
 		title={\textit{N} = 1 超对称规范理论综述},
-		title*={Review of \textit{N} = 1 Supersymmetry Gauge Theory},
+		title*={Review of \textit{N} = 1 Supersymmetric Gauge Theory},
 		author={张昊},
 		supervisor={Satoshi Nawata},
 		department={物理系},
 		major={物理学},
 		studentid = {14307110144},
-		keywords* = {Supersymmetry Gauge Theory, Seiberg Witten Theory}
+		keywords* = {Supersymmetric Gauge Theory, Seiberg Witten Theory}
 	}
 }
-\ExplSyntaxOn
-\tl_set:Nn \c__fdu_def_name_thesis_type_tl{ 本科毕业论文 }
-\ExplSyntaxOff
+
 
 \begin{document}
-\tableofcontents
-\begin{abstract}
-	This paper is a summary of \textit{N}=1 Supersymmetry 
-	Gauge Theory. We first raise several reason on why we 
-	are interested in Supersymmetry. Then, we begin with 
-	some detail description on Supersymmetry Gauge Theory, 
-	including Renormalization and Anomalies. Later we focus 
-	on Seiberg Witten Theory. 
-\end{abstract}
+  \tableofcontents
+  \begin{abstract}
+	  This paper is a summary of \textit{N}=1 supersymmetric 
+	  gauge theory. We first raise several reasons on why we 
+	  are interested in supersymmetry. Then, we begin with 
+	  some detail descriptions on supersymmetric gauge theory, 
+	  including renormalization and anomalies. Later we focus 
+	  on Seiberg Witten theory. 
+   \end{abstract}
+   
 \chapter{Why Supersymmetry?}
-	This chapter is a brief introduction on why we discuss 
-	Supersymmetry. 
+	  This chapter is a brief illustration on why we need introduce 
+	  supersymmetry to a theory. 
 	
-\chapter{The Description of N=1 Supersymmetry Gauge Theory}
-\cite{ryder1996quantum}
+\chapter{The Description of N=1 Supersymmetry Gauge Theory}\cite{ryder1996quantum}
+
+    \begin{align}
+    	\int \dd^2{\tht}\frac{-i}{8\pi}\tau \text{tr} W_{\a}W^{\a}+ cc.
+    \end{align}
+
 \chapter{Renormalization}
+
 \chapter{Anomalies}
+
 \chapter{Seiberg Witten Theory}
-\chapter{Appendix}
-  \section{Notation Convention}
+
+\appendix
+
+\chapter{Notation Convention}
+
+  \section{4 dimension Gamma Matrice}
+    \begin{equation}
+       g^{\m\n} = \h^{\m\n} = \text{diag}(1,-1,-1,-1)
+    \end{equation}
+    
 \printbibliography
 \end{document}
