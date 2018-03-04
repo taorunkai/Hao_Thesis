@@ -6,12 +6,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\bfseries \numberline {Chapter 2}The Description of N=1 Supersymmetry Gauge Theory}{9}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bfseries \numberline {Chapter 3}Renormalization}{11}{chapter.3}
+\contentsline {section}{\bfseries \numberline {2.1}(Wilsonian) Effective action}{9}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bfseries \numberline {Chapter 4}Anomalies}{13}{chapter.4}
+\contentsline {section}{\bfseries \numberline {2.2}Types of IR fixed points}{11}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bfseries \numberline {Chapter 5}Seiberg Witten Theory}{15}{chapter.5}
+\contentsline {section}{\bfseries \numberline {2.3}Supersymmetric Effective Actions}{13}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\bfseries \numberline {Appendix A}Notation Convention}{17}{appendix.A}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\bfseries \numberline {A.1}4 dimension Gamma Matrice}{17}{section.A.1}
+\contentsline {section}{\bfseries \numberline {2.4}Symmetrie and Holomorphy}{15}{section.2.4}

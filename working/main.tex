@@ -31,26 +31,362 @@
 	  This chapter is a brief illustration on why we need introduce 
 	  supersymmetry to a theory. 
 	
-\chapter{The Description of N=1 Supersymmetry Gauge Theory}\cite{ryder1996quantum}
+\chapter{The Description of N=1 Supersymmetry Gauge Theory}
 
-    \begin{align}
-    	\int \dd^2{\tht}\frac{-i}{8\pi}\tau \text{tr} W_{\a}W^{\a}+ cc.
-    \end{align}
+\noindent\textbf{\emph{Motivation \& problems}}
 
-\chapter{Renormalization}
+Given an asymptotically-free gauge theory, we want to understand IR physics, which is difficult because the theory is strongly-coupled.
 
-\chapter{Anomalies}
+Eg.QCD
 
-\chapter{Seiberg Witten Theory}
+IR is quite different from UV.
 
-\appendix
+UV: free theory of quarks and gluons
 
-\chapter{Notation Convention}
+(deep)IR: free theory of pions and glueballs
+\bigskip\\
+\textbf{\emph{Strategy}}
 
-  \section{4 dimension Gamma Matrice}
-    \begin{equation}
-       g^{\m\n} = \h^{\m\n} = \text{diag}(1,-1,-1,-1)
-    \end{equation}
+First,we make edugated guess for  long distance fields and symmetries; then write down all posssible effective actions(EA), which must be consistent with symmetries and selection rules. Finally, check original guess by using predictions from effctive actions. This strategy works very well in susy theories because of holomorphy and non-renormaliztion theorem.
+\bigskip\\
+\textbf{\emph{Introduction}}
+
+1.This lecture uses superspace technology
+
+2.The use of these non-renormaliztion theorems to find exact (non-perturbative) LEEA will be one of the goal
+
+3.This lecture will stick to 4d $N=1$ susy, but applies equally to many dimension and susy as well as SUGRA
+\bigskip\\
+\textbf{\emph{Outline}}
+
+1.Effective action
+
+2.Symmetries, holomorphy,spurion analysis
+
+3.Non-renormaliztion theorem for chiral superfield
+
+4.Anomalies
+
+5.Non-renormaliztion theorem for vector superfield
+
+6.4d N=1 pure YM
+
+7.4d N=1 SQCD
+
+8.a-theorem
+\section{(Wilsonian) Effective action}
+$ S_{\mu} = \int d^{4}x L_{\mu}(\phi)$ describes physics at $E<\mu$, obtained by performing Feynman path integral over the short distance fluctuations of the fields on length scale $x<\frac{1}{\mu}$.
+
+We make assumptions that it's local on scale $x \geq \frac{1}{\mu}$ and unitary for processes involving energies $E < \mu $.
+
+For $E\sim\mu$, classical couplings(tree level) in $S_{\mu}$ describe effective couplings and masses (not renormalized by loops since short distance degree of freedom already integrated out).
+\bigskip\\
+Physical processes at $E \ll \mu$ will get quantum corrections due to fluctuations of modes in EA with energies between $E$ and $\mu$.
+\bigskip\\
+This corrections can be absorbed in coupling to define new EA at lower scale $E$.
+
+RG: change in $S_{\mu}$ as $\mu$ decreases.
+
+$S_{\mu} = \int d^{4}x \sum_{i} g_{i}(\mu)\mathcal{O}_{i}$, where $g_{i}$ is effective coupling and $\mathcal{O}_{i}$ is some operator.
+
+RG equation is given by 
+\begin{equation}
+\label{RGeq}
+\mu \frac{\partial g_{i}}{\partial \mu} = \beta_{i}(g_{F},\mu)
+\end{equation}
+(picture here)
+
+Despite picture, RG flow is not reversible! There are infinitely many operators and couplings "integrated out" along each flow!
+
+IR EAs are $S_{\mu}$ near an IR fixed point.($\mu$ is finite, but small compared to all other scales.)
+
+One-particle irreducible EA is not equivalent to $S_{\mu=0}$
+\bigskip\\
+If IR fixed point is free,
+\begin{equation}
+\label{Sfree}
+S_{free} = 
+\end{equation}
+These fields should scale to keep $S_{free}$ independent of scale $\mu_{0}$.
+
+i.e. repalce scale
+
+$$\mu_{0} \rightarrow \mu = (\frac{\mu}{\mu_{0}})\mu_{0}, dx_0 \rightarrow (\frac{\mu_0}{\mu})dx$$
+
+$$E_0 \rightarrow (\frac{\mu}{\mu_0})E$$
+
+$$\partial_0 \rightarrow (\frac{\mu}{\mu_0})\partial$$
+\bigskip\\
+rescaling
+
+$$\phi_0 \rightarrow (\frac{\mu}{\mu_0})\phi$$
+
+$$\psi_0 \rightarrow (\frac{\mu}{\mu_0})^{\frac{3}{2}}\psi$$
+
+$$F^{\mu\nu}_0 \rightarrow (\frac{\mu}{\mu_0})^2F^{\mu\nu}$$
+
+leaves $S_{free}$ as it was.
+\bigskip\\
+In general, if operator $\mathcal{O}_i$ scales as $\mathcal{O}_i \rightarrow (\frac{\mu}{\mu_0})^{\Delta_i}\mathcal{O}_i$, where $\Delta_i$ is called scaling dimension.
+
+$\rightarrow$
+
+\noindent So, $\Delta_i > 4$, $\mathcal{O}_i$ irrelevant, less important at IR;
+
+$\Delta_i = 4$, $\mathcal{O}_i$ marginal;$\mu^{4-\Delta_i}\lambda_i(\mu)\mathcal{O}_i$\\
+$$\mu\frac{d\tilde{\lambda}_i}{d\mu}=(4-\Delta_i)\tilde{\lambda}_i+\beta_i(\tilde{\lambda}_j)$$
+where the first term on the right hand side is the classical scaling, while the second term is quantum correction from fluctuations $\mu +d\mu>E>\mu$ $\Rightarrow$ finite (no UV or IR divergence)
+\\E.g. $L=(\partial\phi)^2+\lambda\phi^4 \Rightarrow \mathcal{O}=\phi^4, \Delta = 4$
+\\$$\Rightarrow \lambda(\mu)=\frac{\lambda(\mu_0)}{1+ln(\frac{\mu_0}{\mu})\lambda(\mu_0)}$$
+\\$\Rightarrow$ IR free theory\\
+\bigskip Quantum corrections to kinetic terms(wave function renormalized)
+\\e.g. write $$S_{\mu}=\int d^4x{Z(\mu)(\partial\phi)^2+\mu^2m^2(\mu)\phi^2+\lambda(\mu)\phi^4+...}$$\\
+$Z$ is the renormalization of the wave function and can be absorbed in redefinition of fields $\phi \rightarrow \phi_{C.N.}\equiv \sqrt{Z}\phi$, where C.N. stands for canonically normalized.
+$$\Rightarrow S_{\mu}=\int d^4x{(\partial\phi_{C.N.})^2+\mu^2m_{C.N.}^2(\mu)\phi_{C.N.}^2+\lambda_{C.N.}(\mu)\phi_{C.N.}^2+...}$$
+
+with $m_{C.N.}(\mu)=\frac{m(\mu)}{\sqrt{Z(\mu)}}$, $\lambda_{C.N.}(\mu)=\frac{\lambda(\mu)}{Z^2(\mu)}$
+
+Thus physical mass $m_{phys}=\mu m_{C.N.}(\mu)=\frac{\mu m(\mu)}{\sqrt{Z(\mu)}}$($\mu\rightarrow0$limit)
+
+\bigskip As flow to IR,eventually reach a point where $m_{eff}=\mu m_{C.N.}(\mu)>\mu$
+
+$\Rightarrow$ mass term dominates kinetic term and fixes $\phi$ to be constant.
+
+So, for $\mu<m_{eff}, \phi\simeq const.$, and drop kinetic terms = "integrate out" $\phi$
+
+massless fields, though, have degrees of freedom for any $\mu$.
+
+\section{Types of IR fixed points}
+There are three types of IR fixed points. The first one is the trivial one: all fields massive so for $\mu<$masses all integrated out and no propagating degree of freedom. The second is the free one:all massless fields are non-interacting in far IR.(e.g. $\lambda\phi^4$ theory, QED) The last is the interacting one: in 4d, we have no good description of interacting theories of massless particles(i.e. non-Lagrangian)
+
+Coleman-Gross found that any theory of scalars, spinors and U(1) gauge fields is IR free. This gives a large class of IR-free theories(We will see later that only others are non-Abelian gauge theory with many massless flavors.)
+
+Take field content of IR effective theory to be scalar $\phi^n$, complex Weyl spinor $\psi_{\alpha}^a$, U(1) vector $A_{\mu}^A$
+
+${n,a,A}$ just to label different fields
+
+\bigskip General form of leading (relevant) IR action
+
+$S_{eff}=$
+
+where $$D_{\mu}\chi=(\partial_{\mu}+q_AA_{\mu}^A)\chi$$
+
+$$F_{\mu\nu}^A=\partial_{\mu}A_{\nu}^A-\partial_{\nu}A_{\mu}^A$$
+
+$$\tilde{F}_{\mu\nu}^A=\frac{1}{2}\epsilon_{\mu\nu\rho\sigma}F^{A\rho\sigma}$$ "dual field strength"
+
+Constraint $g_{mn}$ real symmetric positive definite
+
+$g_{AB}$
+
+V bounded below
+
+It's convenient to define generalized $\mathbb{C}$ coupling
+
+$$\tau_{AB}(\phi)=\frac{\theta_{AB}}{2\pi}+i\frac{4\pi}{g_{AB}^2}$$
+
+The gauge kinetic terms written 
+
+$\frac{i\tau}{16\pi^2}(\mathcal{F}^2)+c.c.$
+
+where $\mathcal{F}^{\mu\nu}=\frac{1}{2}F^{\mu\nu}-\frac{i}{2}\tilde{F}^{\mu\nu}$ "self-dual"
+
+\bigskip
+-Meaning of $\tau_{AB}$
+
+Since fields are free in IR, what is the meaning of gauge coupling $\tau$?
+
+1) charged $\phi$ or $\psi$ are massless
+
+1-loop running of U(1) coupling 
+
+$\Rightarrow$ IR free
+
+\bigskip
+(picture)
+
+2) all charged fields massive 
+
+U(1) coupling stops running for $\mu<$lightest charged particle(since integrated out)
+
+\bigskip
+(picture)
+
+In this case, $\tau$ measures strength of coupling only to massive (calssical) sources
+
+\bigskip
+-$\theta$-angles, sensitive to instanton number of field configs.
+
+In presence of electric-magnetic massive charges, can have non-trivial $\theta$-effects.
+
+\bigskip
+-Electric-magnetic duality
+
+field redefinition in U(1) theories
+
+$$\tau\rightarrow\frac{A\tau+B}{C\tau+D}$$ 
+
+\[
+\left(
+\begin{array}{cc}
+A & B \\
+C & D 
+\end{array}
+\right)
+\] 
+
+\section{Supersymmetric Effective Actions}
+susy $\acomm{Q_{\alpha}}{\bar{Q}_{\dot{\alpha}}}=2\sigma^{\mu}_{\alpha\dot{\alpha}}P_{\mu}:=2P_{\alpha\dot{\alpha}}$
+
+$\Rightarrow  \langle\psi|H|\psi\rangle = \Sigma_{\alpha}\left|Q_{\alpha}|\psi\rangle\right|^2+\Sigma_{\dot{\alpha}}\left|\bar{Q}_{\dot{\alpha}}|\psi\rangle\right|^2 \geq 0$
+
+susy preserved $\Longleftrightarrow$ $V=0$ 
+
+(picture) $V(\phi)=\left|\frac{dW}{d\phi}\right|^2$
+
+\bigskip
+Supermultiplets
+
+(to be finished) Impose some conditions to get basic irreps.
+
+Superspace: replace $Q_{\alpha}$, $\bar{Q}_{\dot{\alpha}}$ $\rightarrow$ diff op in supercoord
+\begin{equation}
+Q_{\alpha}=\frac{\partial}{\partial\theta^{\alpha}}-i\sigma^{\mu}_{\alpha\dot{\alpha}}\bar{\theta}^{\dot{\alpha}}\frac{\partial}{\partial x^{\mu}}
+\end{equation}
+\bigskip
+Examples of irreps
+
+\noindent1) chiral rep $[\bar{Q}_{\dot{\alpha}}, \mathcal{O}]=0$ or $\bar{D}_{\dot{\alpha}}\mathcal{O}=0$ in superspace
+\begin{equation}
+\Phi = \phi(y)+\sqrt{2}\mathcal{O}\psi(y)+\mathcal{O}^2F(y)
+\end{equation}
+2) Impose $\mathcal{O}:=V$ is real with $V \rightarrow V+i(\Lambda-\bar{\Lambda})$ symmetry with $\lambda = $ chiral superfield
+
+$\Rightarrow$ gauge multiplet in superspace
+
+bottom operator and impose it's real with
+
+\begin{equation}
+\label{FZmultiplet}
+\bar{D}^{\dot{\alpha}}T_{\alpha\dot{\alpha}}=\bar{D}^{\alpha}T_{\alpha\dot{\alpha}}=0
+\end{equation}
+
+\begin{equation}
+T_{\mu}=j^{\mu}_R-i\theta(S_{\mu}+...)+i\bar{\theta}(\bar{S}_{\mu}+...)+\theta\sigma^{\nu}\bar{\theta}(2T_{\mu\nu}+...)
+\end{equation}
+More generally, Ferarra-Zumino multiplet has $\bar{D}^{\dot{\alpha}}T_{\alpha\dot{\alpha}}=D_{\alpha}X$ $X$: chiral superfield
+
+\begin{equation}
+F_x=\frac{2}{3}T^{\mu}_{ \ \mu}+i\partial_{\mu}j^{\mu}_R
+\end{equation}
+violation of scale and R-symmetry tied together. "multiplet of anomalies"
+
+\bigskip
+\noindent-Scalars, Spinors and Vector fields appear in chiral superfield as
+\begin{equation}
+\Phi(x,\theta)=\phi(x)+\psi(x)\theta+F(x)\theta\theta
+\end{equation}
+They appear in vector superfield as 
+\begin{equation}
+V(x, \theta, \bar{\theta})=\bar{\theta}\sigma^{\mu}\theta A_{\mu}(x)+\bar{\theta}^2\theta\lambda(x)+...
+\end{equation}
+chiral field-strength 
+\begin{equation}
+W_{\alpha}(x,\theta)=\lambda_{\alpha}(x)+(\sigma^{\mu\nu}\theta)\mathcal{F}_{\mu\nu}(x)+...
+\end{equation}
+\begin{equation}
+W_{\alpha}~\bar{D}^2e^{-V}D_{\alpha}e^V
+\end{equation}
+\begin{equation}
+D_{\alpha}W^{\alpha}=\bar{D}^{\dot{\alpha}}W_{\alpha}=0
+\end{equation}
+gauge inv.
+\begin{equation}
+e^{-V} \rightarrow e^{-i\bar{\Lambda}}e^{-V}e^{i\Lambda}
+\end{equation}
+\begin{equation}
+W_{\alpha} \rightarrow e^{-i\Lambda}W_{\alpha}e^{i\Lambda}
+\end{equation}
+where $\Lambda$ is some chiral superfield.
+
+\bigskip
+-Supersymmetric actions given by 
+\begin{equation}
+L = \int d^2\theta d^2\bar{\theta}\widetilde{K}+\int d^2\theta \widetilde{W}+h.c.
+\end{equation}
+where $\widetilde{K}$ is general superfield, dim$\widetilde{K}=2$; $\widetilde{W}$ is chiral superfield, dim$\widetilde{W}=3$.
+\begin{equation}
+L = \widetilde{K}_{ij}\partial_{\mu}\phi^{i}\partial^{\mu}\bar{\phi}^j+...-W_{ij}\psi^i_{\alpha}\psi^j_{\beta}\epsilon^{\alpha\beta}-K^{ij}\partial_iW\partial_j\bar{W}
+\end{equation}
+-Kinetic terms
+\begin{equation}
+\int d^2\theta d^2\bar{\theta} \bar{\Phi}\Phi \longrightarrow \int d^2\theta d^2\bar{\theta} \bar{\Phi}e^V\Phi, \int d^2\theta Tr(W_{\alpha}W^{\alpha})
+\end{equation}
+-General superfield
+\begin{equation}
+\widetilde{K}=K(\bar{\Phi}e^V, \Phi)+\widetilde{K}(\bar{\Phi}e^V, \Phi, D, \bar{D}, \partial_{\mu})
+\end{equation}
+where $K$ is Kahler potential and $D$, $\bar{D}$ and $\partial_{\mu}$ are arbitrary derivatives
+
+\noindent-Chiral superfield
+\begin{equation}
+\widetilde{W}=W(\Phi)+\tau(\Phi)Tr(W_{\alpha}W^{\alpha})+\theta(W^4)+W^{\prime}(\Phi, \partial_{\mu})+...
+\end{equation}
+-To see which terms, we need to keep in IR action
+
+$$x_0\rightarrow(\frac{\mu_0}{\mu})x, \theta_0\rightarrow(\frac{\mu_0}{\mu})\theta$$
+
+$$\partial^0_{\mu}\rightarrow(\frac{\mu}{\mu_0})\partial_{\mu}, \partial_{\theta_0}\rightarrow(\frac{\mu}{\mu_0})\partial_{\theta}$$
+
+$$dx_0\rightarrow(\frac{\mu_0}{\mu})dx, d\theta_0\rightarrow(\frac{\mu_0}{\mu})d\theta$$
+
+superfield scales in the same way as lowest comp.
+
+$$\Phi_0\rightarrow(\frac{\mu}{\mu_0})\Phi$$
+
+$$W^{\alpha}_0\rightarrow(\frac{\mu}{\mu_0})^{\frac{3}{2}}W^{\alpha}$$
+
+\noindent-Chiral superfield 
+$$\mathcal{O}_{i0}\rightarrow(\frac{\mu}{\mu_0})^{\Delta_i}\mathcal{O}_i$$
+$$\Rightarrow \int d^4x\int d^2\theta_0\mathcal{O}_{i0}\rightarrow(\frac{\mu}{\mu_0})^{\Delta_i-3}\int d^4x d^2\theta \mathcal{O}_i$$
+$\Delta_i=3$ is marginal chiral superfield
+
+\noindent-General superfield 
+$$\eta_{i0}\rightarrow(\frac{\mu}{\mu_0})^{\Delta_i}\eta_i$$
+$$\Rightarrow \int d^4x_0 d^2\theta_0 d^2\bar{\theta_0}\eta_{i0}\rightarrow(\frac{\mu}{\mu_0})^{\Delta_i-2}\int d^4x d^2\theta d^2\bar{\theta}\eta_i$$
+$\Delta_i=2$ is marginal superfield.
+
+\noindent-Write down relevant term
+\begin{equation}
+S_{\mu}=\int d^4x d^2\theta Z(\mu) \bar{\Phi}e^V\Phi+(\int d^2\theta\dot{\tau}(\mu)TrW^2+W(\Phi)+h.c.)
+\end{equation}
+Remark
+
+For U(1) gauge group, we can add Faget-Iliopoulos term $\int d^4x \xi \int d\theta_{\alpha}W^{\alpha}$.
+
+\noindent Example
+$$L=\int d^4\theta K + \int d^2\theta W + h.c.$$ for chiral superfield $X$, where $K=\bar{X}X$, $W=hX^n$, dim$X=1$
+
+In 4d: $h$ is relevant, $n\leq2$; $h$ is irrelevant, $n\geq4$; $h$ is marginal irrelevant,$n=3$
+
+We can perturbative superpotential $W=\Sigma_{p=0}^nh_pX^p$
+
+$V=\left|\frac{dW}{dX}\right|^2$ has $(n-1)$ susy vacua (spout susy breaking for $n=1$)
+
+\section{Symmetrie and Holomorphy}
+-Continuous symmetry with parameter ($\epsilon \in \mathbb{R}$) and generator $Q$
+\begin{equation}
+\mathcal{O}(0)\rightarrow\mathcal{O}(\epsilon)=e^{i\epsilon Q}\mathcal{O}(0)e^{-i\epsilon Q}\simeq \mathcal{O}(0)+i\epsilon[Q,\mathcal{O}(0)]+...
+\end{equation}
+-Main Symmetries: Poincare
+
+-space-time translation generated by $P_{\mu}$ ($x^\mu\rightarrow x^\mu+\epsilon^\mu$)
+\begin{equation}
+\phi(x)\rightarrow\phi(x-\epsilon)\Rightarrow \delta\phi=-\epsilon^\mu\partial_\mu\phi\Rightarrow[P_\mu,\phi(x)]=i\partial_\mu\phi(x)
+\end{equation}
+
+In local field theory, $P_\mu=\int d^3x T_{\mu0}$, when $\partial^\mu T_{\mu\nu}=0$ and $T_{\mu\nu}=T_{\nu\mu}$
+
     
 \printbibliography
 \end{document}
