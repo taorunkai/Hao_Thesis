@@ -6,10 +6,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\bfseries \numberline {Chapter 2}The Description of N=1 Supersymmetry Gauge Theory}{9}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\bfseries \numberline {2.1}(Wilsonian) Effective action}{9}{section.2.1}
+\contentsline {section}{\bfseries \numberline {2.1}Wilsonian Effective action}{10}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\bfseries \numberline {2.2}Types of IR fixed points}{11}{section.2.2}
+\contentsline {section}{\bfseries \numberline {2.2}Types of IR fixed points}{12}{section.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\bfseries \numberline {2.3}Supersymmetric Effective Actions}{13}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\bfseries \numberline {2.4}Symmetrie and Holomorphy}{15}{section.2.4}
+\contentsline {section}{\bfseries \numberline {2.4}Symmetrie and Holomorphy}{16}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\bfseries \numberline {2.5}Holomorphy in Supersymmetry}{18}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\bfseries \numberline {2.6}Non-renormalization of the superpotential}{20}{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\bfseries \numberline {2.7}K\"{a}hler term renormalization}{21}{section.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.1}Gauge theory and moduli space of (classical) vacua}{22}{subsection.2.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\bfseries \numberline {2.8}Anomalies}{23}{section.2.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8.1}Trace Anomalies}{23}{subsection.2.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8.2}Chiral Anomalies}{25}{subsection.2.8.2}
